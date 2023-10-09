@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "Barlow Condensed";
+    src: url(fonts/BarlowCondensed-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Barlow Semi";
+    src: url(fonts/BarlowSemiCondensed-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Bungee Outline";
+    src: url(fonts/BungeeOutline-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Bungee Shade";
+    src: url(fonts/BungeeShade-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Barlow Bold";
+    src: url(fonts/BarlowSemiCondensed-Bold.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#backdrop {
+    width: 80%;
+    margin: 40px auto;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-family: "Bungee Shade";
+    font-size: 70px;
+    padding: 0 20px;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    margin: 20px 15px;
+}
+
+nav a {
+    flex-grow: 1;
+    font-family: "Barlow Semi";
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    color: black;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+nav > :nth-child(2) {
+    border: 2px solid white;
+    padding: 18px;
+    box-shadow: 0 0 20px rgba(110, 29, 29, 0.5);
+}
+
+span {
+    font-family: "Barlow Bold";
+}
