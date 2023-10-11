@@ -30,7 +30,7 @@
 body {
     margin: 0;
     height: 100vh;
-    background-image: url(images/background.jpg);
+    background-image: url(images/eminembackground1.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -45,9 +45,10 @@ body {
 header h1 {
     font-family: "Bungee Shade";
     font-size: 70px;
-    color: #6e1d1d;
-    padding: 0 20px;
+    color: #fff8f4;
+    padding: 12px 20px;
     margin: 0;
+    line-height: 1;
 }
 
 nav {
@@ -56,7 +57,7 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 4px;
-    margin: 20px 15px;
+    margin: 60px 15px 50px 15px;
 }
 
 nav a {
@@ -73,23 +74,23 @@ nav a {
 
 nav a:nth-child(1):hover {
     background-color: rgba(0, 0, 0, 0.8);
-    color: #6e1d1d;
+    color: #fff8f4;
 }
 
 nav a:nth-child(3):hover {
     background-color: rgba(0, 0, 0, 0.8);
-    color: #6e1d1d;
+    color: #fff8f4;
 }
 
 nav a:nth-child(4):hover {
     background-color: rgba(0, 0, 0, 0.8);
-    color: #6e1d1d;
+    color: #fff8f4;
 }
 
 nav a:nth-child(2) {
     border: 2px solid white;
     padding: 18px;
-    box-shadow: 0 0 20px rgba(110, 29, 29, 0.5);
+    box-shadow: 0 0 20px #6e1d1d80;
 }
 
 span {
@@ -101,7 +102,7 @@ section.first-container {
     border-radius: 10px;
     background-color: rgb(0, 0, 0, 0.4);
     margin: 60px 15px 15px 15px;
-    color: #6e1d1d;
+    color: #fff8f4;
 
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -111,30 +112,34 @@ section.first-container {
     grid-column: 1 / span 3;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 60px 120px auto 120px auto;
+    grid-template-rows: 50px 120px auto 120px auto;
+    padding-left: 20px;
 }
 
 .first-container div h1 {
+    display: flex;
+    align-items: flex-end;
     grid-column: 1 / span 5;
-    margin: 0px 0 0 10px;
     font-family: "Bungee Outline";
     font-size: 35px;
+    margin: 0;
+    line-height: 1;
 }
 
 .first-container div h2 {
     grid-column: 1 / span 5;
     font-family: "Barlow Bold";
-    font-size: 28px;
+    font-size: 26px;
     margin: 0;
-    padding-left: 10px;
 }
 
-
+.first-container li {
+    padding-left: 10px;
+}
 
 .first-container ul, p {
     font-family: "Barlow Condensed";
     font-size: 18px;
-    padding-left: 10px;
     margin: 0;
     list-style-type: none;
     grid-column: 1 / span 5;
