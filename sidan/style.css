@@ -298,6 +298,10 @@ section > div:nth-child(3) {
     border-radius: 20px 20px 0px 20px;
 }
 
+section > div:nth-child(3) div:nth-child(3) p {
+    padding-bottom: 0;
+}
+
 @media (min-width: 300px) and (max-width: 500px) {
     body {
         background-image: url(images/backgroundmobile1.jpg);
