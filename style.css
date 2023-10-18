@@ -26,25 +26,27 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
     background-image: url(images/eminembackground1.png);
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0 60px;
 }
 
 #backdrop {
-    width: 80%;
-    margin: 40px auto;
+    max-width: 1200px;
+    margin: 5vh auto;
+    padding-bottom: 5vh;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
     font-family: "Bungee Shade";
-    font-size: 70px;
+    font-size: 60px;
     color: #fff8f4;
     padding: 12px 20px;
     line-height: 1;
@@ -56,39 +58,39 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 4px;
-    margin: 60px 15px 80px 15px;
+    margin: 50px 15px;
 }
 
 nav a {
     flex-grow: 1;
+    flex-basis: 0;
     font-family: "Barlow Semi";
-    font-size: 25px;
+    font-size: 17px;
     text-decoration: none;
     text-align: center;
     padding: 20px;
     color: black;
-    border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 nav a:nth-child(1):hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
     color: #fff8f4;
 }
 
 nav a:nth-child(3):hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
     color: #fff8f4;
 }
 
 nav a:nth-child(4):hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
     color: #fff8f4;
 }
 
 nav a:nth-child(2) {
-    border: 2px solid white;
-    padding: 18px;
+    border: 1px solid white;
     box-shadow: 0 0 20px #6e1d1d80;
 }
 
@@ -96,11 +98,11 @@ span {
     font-family: "Barlow Bold";
 }
 
-.first-container {
+section {
     border: 2px solid #6e1d1d;
     border-radius: 20px;
     background-color: rgb(0, 0, 0, 0.4);
-    margin: 60px 15px 15px 15px;
+    margin: 6vh 1.5vw;
     color: #fff8f4;
 
     display: grid;
@@ -112,53 +114,52 @@ section > div:nth-child(1) {
     grid-column: 1 / span 3;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 50px 120px 170px 120px auto;
+    grid-template-rows: 5vh auto;
     padding-left: 20px;
     padding-top: 10px;
 }
 
-.first-container div h1 {
+section div h1 {
     display: flex;
     align-items: flex-end;
     grid-column: 1 / span 5;
     font-family: "Bungee Outline";
-    font-size: 35px;
+    font-size: 28px;
     line-height: 1;
 }
 
-.first-container div h2 {
+section div h2 {
     grid-column: 1 / span 5;
     font-family: "Barlow Bold";
-    font-size: 26px;
+    font-size: 22px;
 }
 
-.first-container ul, p {
+ul, p {
     font-family: "Barlow Condensed";
-    font-size: 18px;
-    padding: 0;
-    padding-right: 5px;
+    font-size: 16px;
+    padding: 25px 10px;
     list-style-type: none;
     grid-column: 1 / span 5;
 }
 
-.first-container > div:nth-child(1) li {
+section > div:nth-child(1) li {
     padding-left: 40px;
-    font-size: 16px;
 }
 
 section > div:nth-child(2) {
     grid-column: 4 / span 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr auto;
+    grid-template-rows: 1fr auto;
     padding-right: 20px;
     padding-top: 20px;
-    gap: 10px;
+    gap: 6px;
 }
 
 .image {
-    grid-column: 1 /span 2;
-    grid-row: 1 / span 2;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    aspect-ratio: 1;
     display: inline-block;
     overflow: hidden;
     position: relative;
@@ -166,7 +167,6 @@ section > div:nth-child(2) {
 
 .image img {
     width: 100%;
-    height: 100%;
     border-radius: 20px 20px 0 0;
     transition: all linear 0.7s;
 }
@@ -188,61 +188,62 @@ section > div:nth-child(2) {
 
 section > div:nth-child(2) article:nth-child(2) {
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 2;
     border-radius: 0 0 0 20px;
-    background-color: #666798;
 }
 
 section > div:nth-child(2) article:nth-child(3) {
-    grid-column: 2;
-    grid-row: 3;
     border-radius: 0 0 20px 0;
+}
+
+.first-container > div:nth-child(2) article {
     background-color: #666798;
 }
 
 section > div:nth-child(2) h3 {
     font-family: "Barlow Bold";
-    margin-top: 15px;
-    margin-left: 15px;
+    padding: 10px 10px 0 10px;
+    font-size: 14px;
 }
 
 section > div:nth-child(2) ol {
     font-family: "Barlow Condensed";
-    padding-left: 30px;
-    padding-bottom: 15px;
+    padding: 0 10px 10px 10px;
+    font-size: 14px;
+    list-style-position: inside;
 }
 
 section > div:nth-child(3) {
     grid-column: 1 / span 5;
     display: grid;
     gap: 5px;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 220px;
-    padding: 10px 20px 20px 15px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    padding: 10px 20px 15px 20px;
 }
 
-section > div:nth-child(3) div:first-of-type {
+.first-container > div:nth-child(3) div {
+    background-color: #666798;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.first-container > div:nth-child(3) div:first-of-type {
     grid-column: 1;
-    background-color: #666798;
     border-radius: 20px 0px 20px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-section > div:nth-child(3) div:nth-child(2) {
-    grid-column: 3 / span 3;
-    background-color: #666798;
+.first-container > div:nth-child(3) div:nth-child(2) {
+    grid-column: 3 / span 2;
     border-radius: 20px 20px 20px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-section > div:nth-child(3) div:nth-child(3) {
-    grid-column: 6;
+.first-container > div:nth-child(3) div:nth-child(3) {
+    grid-column: 5;
     background-image: url(images/drdre.jpg);
-    color: #6e1d1d;
+    color: #666798;
     border-radius: 0px 20px 20px 20px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -252,18 +253,207 @@ section > div:nth-child(3) div:nth-child(3) {
     align-items: flex-end;
 }
 
-section > div:nth-child(3) div:last-of-type {
-    grid-column: 7;
-    background-color: #666798;
+.first-container > div:nth-child(3) div:last-of-type {
+    grid-column: 6;
     border-radius: 20px 20px 0px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-section > div:nth-child(3) div p {
-    padding: 15px;
-    font-size: 18px;
+.second-container > div:nth-child(2) article {
+    background-color: #6d615c;
+}
+
+.second-container > div:nth-child(3) div {
+    background-color: #6d615c;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 20px 0px;
+}
+
+.second-container > div:nth-child(3) div:first-of-type {
+    grid-column: 1 / span 2;
+    border-radius: 20px 20px 20px 0px;
+}
+
+.second-container > div:nth-child(3) div:nth-child(2) {
+    grid-column: 3;
+    border-radius: 0px 20px 20px 20px;
+}
+
+.second-container > div:nth-child(3) div:nth-child(3) {
+    grid-column: 4 / span 2;
+    background-image: url(images/eminemanddrestudio.jpg);
+    color: #6d615c;
+    border-radius: 0px 20px 20px 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+}
+
+.second-container > div:nth-child(3) div:last-of-type {
+    grid-column: 6;
+    border-radius: 20px 20px 0px 20px;
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+    body {
+        background-image: url(images/backgroundmobile1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 0 20px;
+    }
+
+    #backdrop {
+        background-color: rgb(0, 0, 0, 0);
+        max-width: 100%;
+        margin: 0;
+        padding-bottom: 0;
+    }
+
+    header h1 {
+        font-size: 12vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 3vw;
+        padding: 15px;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        margin: 3vh 2.5vw;
+    }
+
+    section > div:nth-child(2) {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        padding: 20px;
+        gap: 5px;
+    }
+
+    section > div:nth-child(2) h3 {
+        padding:  20px 15px 0 15px;
+        font-size: 3.7vw;
+    }
+
+    section > div:nth-child(2) ol {
+        padding: 0 15px 20px 15px;
+        font-size: 3.2vw;
+    }
+
+    section > div:nth-child(1) {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(4, auto);
+        padding: 10px 20px;
+    }
+
+    section div h1 {
+        font-size: 6vw;
+    }
+
+    section div h2 {
+        font-size: 5vw;
+    }
+
+    ul, p {
+        font-size: 3.6vw;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    section > div:nth-child(3) {
+        grid-column: 1 / span 2;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+
+    .first-container > div:nth-child(3) div:first-of-type {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .first-container > div:nth-child(3) div:nth-child(2) {
+        grid-column: 2 / span 2;
+        grid-row: 1;
+    }
+
+    .first-container > div:nth-child(3) div:nth-child(3) {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .first-container > div:nth-child(3) div:last-of-type {
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    section > div:nth-child(3) p {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    section > div:nth-child(3) div:nth-child(3) p {
+        padding-bottom: 0;
+    }
+
+    .second-container > div:nth-child(3) div:nth-child(3) {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+    }
+
+    .second-container > div:nth-child(3) div:last-of-type {
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+    header h1 {
+        font-size: 6.6vw;
+    }
+
+    nav a {
+        font-size: 1.9vw;
+    }
+
+    section div h1 {
+        font-size: 3.1vw;
+    }
+
+    section div h2 {
+        font-size: 2.4vw;
+    }
+
+    ul, p {
+        font-size: 1.8vw;
+    }
+
+    section > div:nth-child(2) h3 {
+        font-size: 1.5vw;
+    }
+
+    section > div:nth-child(2) ol {
+        font-size: 1.5vw;
+    }
 }
 
 
