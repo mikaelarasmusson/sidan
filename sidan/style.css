@@ -30,7 +30,7 @@
 }
 
 body {
-    background-image: url(sidan/images/eminembackground1.png);
+    background-image: url(images/eminembackground1.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 60px;
@@ -242,7 +242,7 @@ section > div:nth-child(3) {
 
 .first-container > div:nth-child(3) div:nth-child(3) {
     grid-column: 5;
-    background-image: url(sidan/images/drdre.jpg);
+    background-image: url(images/drdre.jpg);
     color: #666798;
     border-radius: 0px 20px 20px 20px;
     background-repeat: no-repeat;
@@ -282,7 +282,7 @@ section > div:nth-child(3) {
 
 .second-container > div:nth-child(3) div:nth-child(3) {
     grid-column: 4 / span 2;
-    background-image: url(sidan/images/eminemanddrestudio.jpg);
+    background-image: url(images/eminemanddrestudio.jpg);
     color: #6d615c;
     border-radius: 0px 20px 20px 20px;
     background-repeat: no-repeat;
@@ -300,7 +300,7 @@ section > div:nth-child(3) {
 
 @media (min-width: 300px) and (max-width: 500px) {
     body {
-        background-image: url(sidan/images/backgroundmobile1.jpg);
+        background-image: url(images/backgroundmobile1.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
